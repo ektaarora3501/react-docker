@@ -1,8 +1,10 @@
+# pulling base image
 FROM mhart/alpine-node:11 AS builder
+# creating work dir 
 WORKDIR /app
-COPY package.json /app
+# installing dependencies
 RUN npm install
-
+# copying all the files to /app
 COPY . /app
-
+# final executable command 
 CMD ["npm","start"]
