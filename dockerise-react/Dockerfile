@@ -6,5 +6,6 @@ WORKDIR /app
 RUN npm install
 # copying all the files to /app
 COPY . /app
-# final executable command 
+# final executable command
+EXPOSE 3000
 CMD ["npm","start"]
