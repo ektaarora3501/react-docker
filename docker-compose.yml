@@ -1,0 +1,15 @@
+version: "3"
+
+services: 
+    backend:
+        build:  ./backend
+        ports: 
+            - "5000:5000"
+    frontend:
+        build: ./frontend/testing-docker
+        ports: 
+            - "8000:3000"
+
+
+    
+            
